@@ -1,0 +1,21 @@
+module HelloApp
+{  typedef double amount[6];
+   typedef string player[6];
+   typedef string availableml[6];
+   typedef sequence<double> choice;
+   typedef sequence<double> cho;
+
+interface Hello
+{
+
+string sign(in double choice);
+string revoke(in double cho);
+player playerDetails();
+amount getAmt();
+availableml avail();
+oneway void shutdown();
+};
+};
+
+
+
